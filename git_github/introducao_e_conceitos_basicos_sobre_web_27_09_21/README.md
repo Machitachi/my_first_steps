@@ -1,4 +1,4 @@
-# Atividade de git e gitHub - Aula 27/0921
+# Atividade de git e gitHub - Aula 27/09/21
 <h3> 1 - Após criado a sua conta no GitHub, crie um repositório remoto público chamado “my_first_steps” e cole o link aqui.</h3>
 <p> R: https://github.com/Machitachi/my_first_steps </p>
 
@@ -58,3 +58,42 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)</p>
 
 <h3> 5 - Dentro do seu diretório local, crie um arquivo chamado “README.md” e edite-o contendo todas as respostas aos enunciados das questões anteriores. Adicione-o ao seu repositório remoto utilizando os comandos git necessários para a realização desta tarefa.</h3>
+<p>Criei o README.md dentro da minha IDE Visual studio code
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ ls
+README.md  ola_mundo.txt  serei_ignorado.txt
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+nothing added to commit but untracked files present (use "git add" to track)
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ git add .
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   README.md
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ git commit -m "Criando .gitignore e README.md!"
+[main a95dd70] Criando .gitignore e README.md!
+ 2 files changed, 62 insertions(+)
+ create mode 100644 git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21/.gitignore
+ create mode 100644 git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21/README.md
+pascj@LAPTOP-G0NR32FB MINGW64 ~/Desktop/alpha/git_github/introducao_e_conceitos_basicos_sobre_web_27_09_21 (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 2.34 KiB | 598.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Machitachi/my_first_steps.git
+   6f984eb..a95dd70  main -> main</p>
