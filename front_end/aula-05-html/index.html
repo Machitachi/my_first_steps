@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Formulário parte II</title>
+</head>
+<body>
+    
+<!-- Demonstre o uso dos seguintes elementos de entrada:
+
+text; 
+password;
+date;
+radio;
+checkbox;
+range;
+reset;
+submit. -->
+
+    <h1>Formulário de </h1>
+    <fieldset style="background-color: #ccc;">
+        <legend style="font-family: fantasy; font-size: 24px; color:rebeccapurple;">Dados:</legend>
+        
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Nome Completo*</label>
+                    <input type="text" id="name" name="nome">
+                </div>
+                <br />
+                <div>
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="mestreyoda@email.com">
+                </div>
+                <br />
+                <div>
+                    <label for="senha">Senha*</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                <br />
+                <div>
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <br />
+                <div>
+                    <h3>Meio de Pagamento:</h3>
+                    <label for="credito">Crédito</label>
+                    <input type="radio" id="credito" name="pagamento">
+                    <label for="debito">Débito</label>
+                    <input type="radio" id="debito" name="pagamento">
+                    <label for="pix">Pix</label>
+                    <input type="radio" id="pix" name="pagamento">
+                    <label for="boleto">Boleto</label>
+                    <input type="radio" id="boleto" name="pagamento">
+                </div>
+                <br />
+                <div>
+                    <label for="name">Nome Completo*</label>
+                    <input type="reset" id="name" name="nome">
+                </div>
+            </form>
+    </fieldset>
+</body>
+</html>
