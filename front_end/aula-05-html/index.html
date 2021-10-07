@@ -6,61 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 05 - Formulário parte II</title>
 </head>
-<body>
+<body> 
     
-<!-- Demonstre o uso dos seguintes elementos de entrada:
+    <h1 style="color: #ccc; text-align: center;">Formulário de Dados </h1>
+    <div style="display: inline-block;position: absolute;left: 36%;">
+        <fieldset style="background-color: #ccc;">
+            <legend style="font-family: fantasy; font-size: 24px; color:rebeccapurple;">Dados:</legend>
+            
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Nome Completo*</label>
+                        <input type="text" id="name" name="nome" required style="width: 65%;">
+                    </div>
 
-text; 
-password;
-date;
-radio;
-checkbox;
-range;
-reset;
-submit. -->
+                    <br />
+                    
+                    <div>
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="mestreyoda@email.com" required style="width: 75%;">
+                    </div>
 
-    <h1>Formulário de </h1>
-    <fieldset style="background-color: #ccc;">
-        <legend style="font-family: fantasy; font-size: 24px; color:rebeccapurple;">Dados:</legend>
-        
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Nome Completo*</label>
-                    <input type="text" id="name" name="nome">
-                </div>
-                <br />
-                <div>
-                    <label for="email">E-mail*</label>
-                    <input type="email" id="email" name="email" placeholder="mestreyoda@email.com">
-                </div>
-                <br />
-                <div>
-                    <label for="senha">Senha*</label>
-                    <input type="password" id="senha" name="senha">
-                </div>
-                <br />
-                <div>
-                    <label for="data">Data de Nascimento</label>
-                    <input type="date" id="data" name="data">
-                </div>
-                <br />
-                <div>
-                    <h3>Meio de Pagamento:</h3>
-                    <label for="credito">Crédito</label>
-                    <input type="radio" id="credito" name="pagamento">
-                    <label for="debito">Débito</label>
-                    <input type="radio" id="debito" name="pagamento">
-                    <label for="pix">Pix</label>
-                    <input type="radio" id="pix" name="pagamento">
-                    <label for="boleto">Boleto</label>
-                    <input type="radio" id="boleto" name="pagamento">
-                </div>
-                <br />
-                <div>
-                    <label for="name">Nome Completo*</label>
-                    <input type="reset" id="name" name="nome">
-                </div>
-            </form>
-    </fieldset>
+                    <br />
+
+                    <div>
+                        <label for="senha">Senha*</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="data">Data de Nascimento</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <h3>Seleciona seus Hobbies:</h3>
+
+                        <label for="fut">Futebol</label>
+                        <input type="checkbox" id="fut" name="Hobbies" value="fut">
+
+                        <label for="skate">Andar de Skate</label>
+                        <input type="checkbox" id="skate" name="Hobbies" value="skate">
+
+                        <label for="game">Video Game</label>
+                        <input type="checkbox" id="game" name="Hobbies" value="game">
+                        
+                        <label for="outros">Outros</label>
+                        <input type="checkbox" id="outros" name="Hobbies" value="outros">
+                                              
+                    </div>
+                   
+                    <div>
+                        <h3>Produtos:</h3>
+
+                        <label for="pc">PC</label>
+                        <input type="checkbox" id="pc" name="produtos" value="pc">
+
+                        <label for="cadeira">Cadeira Gamer</label>
+                        <input type="checkbox" id="cadeira" name="produtos" value="cadeira">
+
+                        <label for="teclado">Teclado</label>
+                        <input type="checkbox" id="teclado" name="produtos" value="teclado">
+
+                        <label for="monitor">Monitor</label>
+                        <input type="checkbox" id="monitor" name="produtos" value="monitor">
+                    </div>
+                    
+                    <div>
+                        <h3>Meio de Pagamento:</h3>
+                        <label for="credito">Crédito</label>
+                        <input type="radio" id="credito" name="pagamento" value="credito">
+                        <label for="debito">Débito</label>
+                        <input type="radio" id="debito" name="pagamento" value="debito">
+                        <label for="pix">Pix</label>
+                        <input type="radio" id="pix" name="pagamento" value="pix">
+                        <label for="boleto">Boleto</label>
+                        <input type="radio" id="boleto" name="pagamento" value="boleto">
+                    </div> 
+                    
+                    <br />
+                    
+                    <label for="comentario"">Comentários sobre o Curso:</label>
+                    <br />
+                    <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
+                                        
+                    <h3>Nível de Satisfação do Curso:</h3>
+
+                    <label>Satisfação: 0 a 10 -</label>
+                    <input type="range" min="0" max="10">
+
+                    <br /> <br />
+                    
+                    <div style="text-align: center;">
+                        <input type="reset" value="reset" style="background-color: aqua;">
+
+                        <input type="submit"value="submit" style="background-color: blueviolet;">
+                    </div>
+                </form>
+        </fieldset>
+    </div>
 </body>
 </html>
