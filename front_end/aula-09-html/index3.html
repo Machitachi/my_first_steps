@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+    <fieldset style="text-align: center;"> 
+
+        <legend>SVG - Scalable Vector Graphics</legend>
+
+        <h1 style="font-size: 40px; color: #121212; background-color: aqua;">Coordenadas Absolutas</h1>
+
+        <h2>AS COORDENADAS ABSOLUTAS cartesianas trabalham como se fosse a introdução de coordenadas de pontos num gráfico, adicionando-se um ponto na tela ou teclando em pares coordenados X e Y, separados por vírgula.
+            Essas coordenadas tem como base o zero absoluto (Canto inferior esquerdo da tela gráfica) do AutoCAD (interseção do eixo X com o eixo Y). </h2>    
+
+        <hr>
+
+        <svg width="600" height="200">   
+
+            <polygon points="100,10 40,198 190,78 10,78 160,198" 
+               fill="rgb(0, 47, 255)" stroke="rgb(216, 81, 27)" stroke-width="5" fill-rule="evenodd" />
+                
+        </svg>
+
+        <div style="margin-left: 400px">
+
+            <svg width="600" height="600">            
+                <polygon points="0,0 400,0 400,100 300,100 300,300 200,500 100,300 100,100 0,100 0,0"
+                stroke="rgb(255,0,0)" stroke-width="5" fill-opacity="0.2" /> 
+            
+            </svg>            
+    
+        </div> 
+
+        <hr>
+        
+        <h1><pre>
+
+            <code>
+            
+            Exemplo:
+            
+            Command : L <ENTER>
+            From point: 0,0 <ENTER>
+            To point: 400,0 <ENTER>
+            To point: 400,100 <ENTER>
+            To point: 300,100 <ENTER>
+            To point: 300,300 <ENTER>
+            To point: 200,500 <ENTER>
+            To point: 100,300 <ENTER>
+            To point: 100,100 <ENTER>
+            To point: 0,100 <ENTER>
+            To point: 0,0 <ENTER> ou close
+            To point: <ENTER>finalizando</p>
+    
+            </code>
+    
+            </pre></h1>       
+
+    </fieldset>
+
+</body>
+</html>
