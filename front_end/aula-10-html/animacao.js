@@ -1,4 +1,3 @@
-// Arquivo: animacao.js
 function Animacao(context) {
     this.context = context
     this.sprites = [];
@@ -16,20 +15,23 @@ ligar: function() {
 },
 
 proximoFrame: function() {
-    // Posso continuar?
+    
     if ( ! this.ligado ) return;
-    // A cada ciclo, limpamos a tela ou desenhamos um fundo
+
     this.limparTela();
-    // Atualizamos o estado dos sprites
+
+    // Atualizar o estado dos sprites
     for (var i in this.sprites)
     this.sprites[i].atualizar();
-    // Desenhamos os sprites
+
+    // Desenhar os sprites
     for (var i in this.sprites)
-this.sprites[i].desenhar();
-// Chamamos o próximo ciclo
-var animacao = this;
-requestAnimationFrame(function() {
-animacao.proximoFrame();
+    this.sprites[i].desenhar();
+
+    // Chamar o próximo ciclo
+    var animacao = this;
+    requestAnimationFrame(function() {
+    animacao.proximoFrame();
 });
 },
 
@@ -38,10 +40,10 @@ desligar:function() {
     },
 
 limparTela: function() {
-        var ctx = this.context; // Só para facilitar a escrita ;)
+        var ctx = this.context; 
         context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+       
         }   
-
 }
 
 var animacao = this;
