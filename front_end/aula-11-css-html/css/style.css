@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-formas-abstratas-brancas_79603-1362.jpg?size=626&ext=jpg');
+}
+
+section {
+    padding: 25px;
+    font-family: 'Roboto';
+    color: white;
+    background-color: rgb(155, 47, 155);
+    line-height: 1.2em;    
+}
+
+h1 {
+    font-family: 'Roboto';
+}
+
+
+
+
