@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > h1 {
+    background-color: aquamarine;
+}
+
+
+.title {
+    color: #ccc; 
+    text-align: center;
+    font-size: 45px;
+    padding: 15px;
+}
+
+.paragraph {
+    font-size: 25px;
+    margin: 15px;
+}
+
+#container {
+    padding: 25px;
+    background-image: url('https://i.ytimg.com/vi/aj5JAaHoIGM/maxresdefault.jpg?v=60a0be9a');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 40%;
+    line-height: 26px;
+    background-color: turquoise;
+    display: inline-block;
+    height: 70%;
+    padding: 20px;
+    color: #121212;
+    text-align: justify;   
+}
+
+.content-style:hover {
+    scale: 2px;
+    background-color: rgb(162, 226, 35);
+    font-size: x-large;
+    box-shadow:bisque;
+}
+
+.list {
+    margin: 20px;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.list li {
+    list-style: none;
+}
+
+li:nth-child(1) {
+    border-radius:5px;
+    background-color: red;
+    padding: 15px;    
+   }
+
+li:nth-child(2) {
+    border-radius:5px;
+    background-color: blueviolet;
+    padding: 15px;    
+   }
+
+li:nth-child(3) {
+    border-radius:5px;
+    background-color: yellowgreen;
+    padding: 15px;    
+   }
+
+li:nth-child(4) {
+    border-radius:5px;
+    background-color: palegoldenrod;
+    padding: 15px;    
+   }
+
+li:nth-child(5) {
+    border-radius:5px;
+    background-color: blue;
+    padding: 15px;    
+   }
+
+li:nth-child(6) {
+    border-radius:5px;
+    background-color: aqua;
+    padding: 15px;    
+   }
+
+li:nth-child(7) {
+    border-radius:5px;
+    background-color:pink;
+    padding: 15px;    
+   }
+
+#tab {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    background-color: aqua;
+}
+
+#imagem {
+    display: inline-block;
+    margin: 30px;
+}
+
+#info {
+    background-color: aquamarine;
+}
+
+a {
+    color: blue;
+  }
+  
+a[href*="novaescola"] {
+    background-color: gold;
+  } 
+
+p::first-letter {
+    color: green;
+    font-size: 50px;
+}
+
+
+
+/* 
+Crie uma página web que demonstre a utilização de seletores CSS em elementos HTML.
+
+Deve conter seletores para “id” e “class” bem como demonstrar o uso de 
+
+seletores em atributos, pseudo-classes e pseudo-elementos bem como o uso de “combinators”.
+
+Mostre o código e o resultado obtido. */
+
+
