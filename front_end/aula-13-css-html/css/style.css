@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://img.elo7.com.br/product/zoom/27FBCF7/painel-de-festa-infantil-minions-2x1-5m-personalizado-impressao-digital.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.banner {
+    background-image: url('https://www.teahub.io/photos/full/9-97669_minions-papel-de-parede-para-notebook.jpg');
+    background-size: cover;
+    width: 50%;
+    margin: auto;
+    height: 400px;    
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 5px;
+    border: lawngreen solid 2px;
+}
+
+a button {
+    width: 250px;
+    height: 75px;
+    border-radius: 5px;
+    border: tomato 2px dotted;
+    color: blue;
+    font-size: 26px;
+    
+}
+
+h1, h2 {
+    font-family: 'Roboto';
+    color:blue; 
+    font-size: 40px; 
+    
+}
+
+/* 
+Crie uma página web que demonstre a utilização de caixas estilizando-as em “width”, “height”, “padding”, “margin”. 
+
+Mostre o código e o resultado obtido. */

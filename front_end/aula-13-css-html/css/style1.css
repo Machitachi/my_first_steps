@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+}
+
+.estilo {
+    width: 300px;
+    height: 800px;
+    background-color: grey;
+    margin: 24px;
+    border: solid 2px rebeccapurple;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+.visible {
+    overflow: visible;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.auto {
+    overflow: auto;    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    width: 100%;
+}
+
