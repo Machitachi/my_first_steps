@@ -1,0 +1,113 @@
+/* Crie uma página web que demonstre o uso de estilos de bordas, isto é, utilizando tipos, cores, espessuras e arredondamentos de bordas. */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+    margin: 72px 0;
+
+}
+
+.page-title {
+
+    color: rgb(236, 54, 78);
+    padding-left: 64px;
+    margin-bottom: 6px;
+
+}
+
+.videos {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.video {
+
+    width: 30%;
+    height: 400px;
+    margin-top: 24px;
+    padding: 32px 12px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.video0 {
+    background: linear-gradient(blue, purple, pink);
+    border: darkmagenta solid 15px;
+    border-style: solid dotted;
+    border-color: rgb(8, 190, 84) yellow;
+}
+
+.video1 {
+    background: orange;
+    border-radius: 12px;
+    
+}
+
+.video2 {
+    background: linear-gradient(red, yellow, green);
+    border: solid purple 20px
+    
+
+}
+
+.video3 { 
+    background-image: url('https://upload.wikimedia.org/wikipedia/pt/5/59/Captain_Marvel_%282018%29.jpg');
+    background-repeat: repeat;
+    border: 20px dashed blue
+    
+}
+
+.video4 {
+    background-image: url('https://uploads.jovemnerd.com.br/wp-content/uploads/2021/10/marvel-anuncia-novas-datas-filmesdoutor-estranho.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border: rgb(36, 197, 15) solid 5px;
+    border-radius: 50%;
+}
+
+.video5 {
+    background: linear-gradient(300deg, rgba(165, 17, 17, 0.9) 40%, rgba(51,56,57,1) 23%) no-repeat;  
+    border: rgb(8, 190, 84) solid 15px;  
+    border-style: dotted dashed solid double;
+    border-color: red green blue yellow;  
+}
+
+
+.video-description1 {
+    background: crimson;
+    opacity: 0.2;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    border-style: dotted   
+}
+
+
+.video:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.video-title {
+
+    margin: 8px 0 12px;
+    color: white;
+
+}
+
+
