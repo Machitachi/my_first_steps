@@ -1,0 +1,98 @@
+/* Crie uma página web que demonstre a utilização fundos de caixas em “cor sólida”, “cor sólida com transparência”, “gradiente de cores”, “imagem única”, “imagem repetida”.  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+    margin: 72px 0;
+
+}
+
+.page-title {
+
+    color: rgb(236, 54, 78);
+    padding-left: 64px;
+    margin-bottom: 6px;
+
+}
+
+.videos {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.video {
+
+    width: 30%;
+    height: 400px;
+    margin-top: 24px;
+    padding: 32px 12px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.video0 {
+    background-color: seagreen;
+}
+
+.video1 {
+    background: orange;
+    
+}
+
+.video2 {
+    background: linear-gradient(red, yellow, green);
+
+}
+
+.video3 { 
+    background-image: url('https://tecnoblog.net/wp-content/uploads/2020/11/ordem-marvel-e1606754420868.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+.video4 {
+    background-image: url('https://img.elo7.com.br/product/original/2A4BFF9/quadro-poster-c-moldura-anime-manga-death-note-love.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.video5 {
+    background: linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+        url(big-star.png) center no-repeat, rebeccapurple;      
+}
+
+
+.video-description1 {
+    background: crimson;
+    opacity: 0.2;
+    height: 300px;
+}
+
+
+.video:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.video-title {
+
+    margin: 8px 0 12px;
+    color: white;
+
+}
+
+
