@@ -1,0 +1,82 @@
+/* Demonstre o uso da manipulação de direção de textos a serem exibidos utilizando o CSS. */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: #181818;
+  font-family: "Roboto", sans-serif;
+  margin: 72px 0;
+  overflow: hidden;
+  
+}
+
+
+.box {
+    inline-size: 150px;
+  }
+  
+.horizontal {
+    writing-mode: horizontal-tb;
+  }
+  
+.vertical {
+    writing-mode: vertical-rl;
+  }
+
+.titulo {
+  color: rgb(236, 54, 78);
+  padding-left: 64px;
+  margin-bottom: 6px;
+}
+
+.descricao {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 64px; 
+}
+
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imagem {
+  width: 30%;
+  height: fit-content;
+  margin-top: 24px;
+  padding:32px 12px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.imagem:hover {
+  transform: scale(1.02);
+  filter: brightness(120%);
+}
+
+img {
+    width: 200px;    
+}
+
+.imagem-titulo {
+  margin: 8px 0 12px;
+  color: white;
+}
+
+.imagem p {
+    color: #efefef;
+}
+
+
+  
