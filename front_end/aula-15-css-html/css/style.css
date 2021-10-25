@@ -1,0 +1,101 @@
+/* Crie uma página “agradável” em HTML que utilize a estilização CSS: “font-family”, “fontweight”, “font-size” e “text-decoration”.
+
+A página poderá conter outros elementos já aprendidos (imagens, formulários, links etc.). Mostre o código e o resultado obtido.  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-image: url('	https://www.foodiesfeed.com/wp-content/uploads/2021/05/meal-wheel.jpg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-size: cover;
+   height: 350vh;
+   
+}
+
+h1, h2 {
+    font-family: 'Roboto', 'arial';
+    color: #edf1f5;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px ;
+    text-shadow: 1px 1px 1px red,
+               2px 2px 1px red;
+}
+
+.banner {
+    overflow: auto;
+    width: 40%;
+    margin: 0 auto;
+    background-image: linear-gradient(red, rgb(68, 0, 255));
+    border-radius: 10px;
+}
+
+.banner:hover {
+    transform: scale(1.04);
+    filter: brightness(100%);
+    opacity: 0.8;
+    margin: 15px auto;
+}
+
+.page-description img {
+    width: 300px;
+    padding: 12px;
+    border-radius: 50%;
+    
+}
+
+.page-description {
+    padding: 12px;
+}
+
+p, ul {
+    font-family: 'Dancing Script', cursive;
+    color: #f7f9fa;
+    font-size: 30px;
+}
+
+p::first-letter {
+    color: yellowgreen;
+    font-size: 70px;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.post {
+    font-weight: 800;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    margin: 20px;
+    padding: 20px;
+    color: #edf1f5;
+}
+
+.container p {
+    font-family:  'Dancing Script', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+.container a {
+    text-decoration: underline #FF3028;
+    border-radius: 4px;
+    background-color: aqua;
+    padding: 0 15px;
+}
+
+.container a:hover {
+    background-color: bisque;
+    text-shadow: 1px 1px 1px red,
+               2px 2px 1px red;
+}
