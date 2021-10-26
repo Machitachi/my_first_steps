@@ -1,0 +1,90 @@
+/* Crie uma página “agradável” em HTML que demonstre a estilização de uma lista não ordenada (“ul”) com seus itens (“li”). */
+
+
+@font-face {
+    font-family: 'zantrokeregular';
+    src: url('fonts/zantroke-webfont.woff2') format('woff2'),
+         url('fonts/zantroke-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Font";
+    src: url("Font.woff2");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+}
+
+h1 {
+    color: white;
+    font-family: "Font", "Bitstream Vera Serif", serif;      
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    color: steelblue;
+    margin: 15px 5px;
+    font-size: 40px;
+    font-family: "Font", "Bitstream Vera Serif", serif; 
+}
+
+p {
+    color: #bdbdbd;
+    font-family: 'zantrokeregular', serif;
+    font-size: 30px;
+    margin: 2px;
+    padding: 10px;
+    text-align: justify;
+}
+
+a {
+    color: yellow;
+    margin: 30px 5px;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+div .imagem {
+    background-image: url('https://www.foodiesfeed.com/wp-content/uploads/2021/08/tiramisu.jpg');
+   height: 400px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right;
+}
+
+ul, ol {
+    color: #bdbdbd;
+    font-size: 30px;
+    margin-left: 50px;
+    padding-left: 2rem;        
+}
+
+.lista1 {
+    list-style-type:square;
+}
+
+.lista2 {
+    list-style-type:hiragana-iroha;
+}
+
+ul { 
+    line-height: 1.5;
+}
+
+.post li {
+    list-style-type: upper-roman;
+}
+
+ 
+ 
