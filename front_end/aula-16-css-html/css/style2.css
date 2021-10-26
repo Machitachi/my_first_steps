@@ -1,0 +1,111 @@
+/* Crie uma página que demonstre a estilização de “links” nas suas mais diversas formas, isto é: “link”, “visited”, “focus”, “hover”, “active”. */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #ccc;
+}
+
+h1 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+ 
+ul {
+    list-style: none;
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: #1C1C1C	;
+    margin: 10px;
+}
+
+nav .links {
+    text-align: center;
+    background-color: bisque;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    border: solid 2px blueviolet
+}
+
+a:link {
+    color: rgb(137, 134, 153);
+    font-family: Roboto, Arial, Helvetica, sans-serif ; 
+
+}
+
+a:visited {
+    color: #FF69B4;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #00FF00;
+}
+
+a:active {
+    background-color: #ffff00;
+}
+
+a:focus {
+    background: linear-gradient(red, blue, yellow);
+    
+}
+
+.contato1 {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+
+.contato2 {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+}
+
+.imagens {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 12px;
+margin: 0 auto;
+width: 100%;
+}
+
+.imagem {
+width: 30%;
+height: fit-content;
+margin-top: 24px;
+padding:32px 12px;
+transition: 0.5s ease-in-out;
+cursor: pointer;
+}
+
+.imagem:hover {
+transform: scale(1.52);
+filter: brightness(120%);
+background-color: blueviolet;
+}
+
+.banner0 {
+border-radius: 50%;
+box-shadow: 0 0 1em rgb(223, 35, 11);
+width: 250px;
+
+}
