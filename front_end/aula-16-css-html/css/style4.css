@@ -1,0 +1,56 @@
+/* Escolha uma fonte obtida pelo “Google fonts” e a utilize em uma página HTML utilizando os conceitos aprendidos de estilização de listas e links. 
+
+Demonstre o código e o resultado. */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131313;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.media-picture {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://t2.tudocdn.net/203355?w=1200&h=675');  
+}
+
+.review-score {
+    color: white;
+    background-color: #e6bd09;
+    padding: 12px;
+}
+
+h2 {
+    color: steelblue;
+    margin: 15px 5px;
+    font-size: 40px;
+}
+
+p {
+    color: #bdbdbd;
+    font-family: 'Irish Grover', cursive;
+    font-size: 30px;
+    margin: 2px;
+    padding: 20px;
+}
+
+a {
+    color: yellow;
+    margin: 30px 5px;
+    font-size: 30px;
+    padding: 20px;
+
+}
