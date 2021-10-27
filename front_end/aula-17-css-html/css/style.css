@@ -1,0 +1,288 @@
+/* Crie uma página web que demonstre o uso de cores nos diversos formatos de descrição (“hexadecimal”, “hexadecimal com transparência”, “RGB”, “RGBA”, “HSL”, “HSLA”, “Cor predefinida pelos browsers” e “cor atual do elemento”) */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+    margin: 72px 0;
+
+}
+
+.titulo {
+
+    color: rgb(236, 54, 78);
+    padding-left: 64px;
+    margin-bottom: 6px;
+
+}
+
+.cores {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.cor {
+
+    width: 30%;
+    height: 400px;
+    margin-top: 24px;
+    padding: 32px 12px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+/* ----paleta 0----------- */
+
+.cor0 {
+    background-color: blue;
+}
+
+.cor li {
+    list-style: none;
+    font-size: 21px;
+}
+
+.tonalidade1 {
+    background-color: #FDB0C0;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade2 {
+    background-color: #4A0100;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade3 {
+    background-color: #FD4659;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.quadrado {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.tipo1 {
+    background-color: RGB(253, 176, 192) ;    
+}
+
+.tipo2 {
+    background-color: RGB(75, 1, 0) ;    
+}
+
+.tipo3 {
+    background-color: RGB(253, 70, 90) ;    
+}
+
+/* ----paleta 1----------- */
+
+.cor1 {
+    background: orange;    
+}
+
+.tonalidade4 {
+    background-color: #9DBCD4;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade5 {
+    background-color: #FFFD01;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade6 {
+    background-color: #6D5ACF;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tipo4 {
+    background-color: RGB(157, 187, 211) ;    
+}
+
+.tipo5 {
+    background-color: RGB(254, 253, 2) ;    
+}
+
+.tipo6 {
+    background-color: RGB(109, 90, 206) ;    
+}
+
+/* ----paleta 2----------- */
+
+
+.cor2 {
+    background: linear-gradient(orange, red, green);
+}
+
+.tonalidade7 {
+    background-color: #c53de780;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade8 {
+    background-color: #00ff0080;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade9 {
+    background-color: #66666680;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tipo7 {
+    background-color: rgba(197,61,231,0.8) ;    
+}
+
+.tipo8 {
+    background-color: rgba(0,255,0,0.8) ;    
+}
+
+.tipo9 {
+    background-color: rgba(102,102,102,0.8) ;    
+}
+
+/* ----paleta 3----------- */
+
+
+.cor3 {
+    background-color: red;
+}
+
+.tonalidade10 {
+    background-color: hsla(67, 48%, 48%, 1);
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade11 {
+    background-color: hsla(265, 64%, 50%, 0.77);
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade12 {
+    background-color: hsla(189, 100%, 44%, 0.59);
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tipo10 {
+    background-color: rgba(167, 181, 64, 1) ;    
+}
+
+.tipo11 {
+    background-color: rgba(114, 46, 209, 0.77) ;    
+}
+
+.tipo12 {
+    background-color: rgba(0, 191, 224, 0.59) ;    
+}
+
+/* ----paleta 4----------- */
+
+
+.cor4 {
+    background-color: green;
+}
+
+.tonalidade13 {
+    background-color: #5F007E;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade14 {
+    background-color: #D7EF7E;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade15 {
+    background-color: #FF331B;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tipo13 {
+    background-color: hsl(285, 100%, 24%);    
+}
+
+.tipo14 {
+    background-color: hsl(72, 77%, 71%) ;    
+}
+
+.tipo15 {
+    background-color: hsl(6, 100%, 55%) ;    
+}
+
+/* ----paleta 5----------- */
+
+.cor5 {
+    background-color:darkorange;
+}
+
+.tonalidade16 {
+    background-color: aqua;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade17 {
+    background-color: springgreen;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tonalidade18 {
+    background-color: darkviolet;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.tipo16 {
+    background-color: #00FFFF;    
+}
+
+.tipo17 {
+    background-color: #00FF7F ;    
+}
+
+.tipo18 {
+    background-color: #9400D3 ;    
+}
+
+.cor:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.cor-titulo {
+
+    margin: 8px 0 12px;
+    color: white;
+    font-size: 30px;
+}
+
+
