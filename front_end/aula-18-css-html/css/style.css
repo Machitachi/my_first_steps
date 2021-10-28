@@ -1,0 +1,198 @@
+/* Criar uma página que demonstre os diversos alinhamentos de itens em um elemento do tipo “flex”, isto é, no mínimo :
+
+um elemento flex que contenha uma imagem centralizada dentro do container;
+um elemento flex que contenha itens alinhados no centro;
+um elemento flex que contenha itens alinhados na vertical;
+um elemento que contenha itens alinhados na horizontal. */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #181818; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.titulo {
+
+    color: rgb(236, 54, 78);
+    font-size: 50px;
+}
+
+.start {
+	align-self: flex-start;
+}
+
+.end {
+	align-self: flex-end;
+}
+
+.center {
+	align-self: center;
+}
+
+.baseline {
+	align-self: baseline;
+}
+
+.stretch {
+	align-self: stretch;
+}
+
+.align-items {
+	align-items: flex-end;
+}
+
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 5px;
+	background: blue;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.item:first-child {
+	padding-top: 20px;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+    background-color: chartreuse;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.videos {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 12px;
+    background-color: violet;
+}
+
+.videos1 {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;     
+    margin: 0 auto;
+    gap: 12px;
+    background-color: rgb(236, 54, 78);
+
+}
+
+.videos2 {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:flex-start;
+    margin: 0 auto;
+    gap: 12px;
+    background-color: yellowgreen;
+
+}
+
+.videos3 {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 12px;
+    background-color:purple;
+}
+
+.video {
+
+    width: 30%;
+    height: fit-content;
+    margin-top: 24px;
+    padding: 32px 12px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.video:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.thumbnail {
+
+    width: 100%;
+
+}
+
+.video-time {
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    float: right;
+    padding: 8px 12px;
+    display: block;
+    transform: translateY(-40px);
+
+}
+
+.video-title {
+
+    margin: 8px 0 12px;
+    color: white;
+
+}
+
+.video-description {
+
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+
+}
+
+.video-views {
+
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 12px;
+    display: block;
+
+}
+
+.video-date {
+
+    text-align: right;
+    display: block;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+
+}
+
