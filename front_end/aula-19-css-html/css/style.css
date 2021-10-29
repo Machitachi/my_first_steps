@@ -1,0 +1,174 @@
+/* Criar uma página que demonstre o uso diverso do “wrap” em elementos do tipo “Flexible box”. 
+
+Note que o intuito do exercício é demonstrar que sabe utilizar as diversas formas de organizar os itens a serem exibidos dentro de um container “flex”. 
+
+Então, utilize a imaginação para a construção de sua página web!  */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:  white;
+    font-size: 30px;
+    background-image: url('https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2021/04/Curso-online.jpg');
+    background-size: cover;    
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #0E1013;
+    height: 150px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 64px; 
+   
+}
+
+ .nav ul {
+   display: flex;  
+   margin: 20px 64px;   
+}
+
+.nav li {
+   list-style: none;
+   margin: 0 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;    
+}
+
+.nav a:hover {
+    color: rgb(247, 17, 247);
+}
+
+.button {
+    background-color: rgba(94, 90, 90, 0.349);
+    max-width: 200px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+div .button:hover {
+    background-color: violet;
+    max-width: 200px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.page {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.title {
+   
+    font-size: 50px;
+    margin-top: 12px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.paragraph {
+    display: block;  
+  
+}
+
+.inscreva a {
+    background-color: rgb(247, 17, 247);
+    max-width: 350px;
+    margin-top: 64px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.inscreva a:hover {
+    color: yellowgreen;
+}
+
+.cursos {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 2px;
+}
+
+.video {
+
+    width: 30%;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 12px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.video img {
+    border-radius: 5px;
+}
+
+.video:hover {
+
+    transform: scale(1.02);
+    filter: brightness(120%);
+
+}
+
+.thumbnail {
+
+    width: 100%;
+
+}
+
+.video-time {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    float: right;
+    padding: 8px 12px;
+    display: block;
+    transform: translateY(-60px);
+
+}
+
+.video-title {
+
+    margin: 8px 0 12px;
+    color: rgb(43, 24, 19);
+    font-size: 30px;
+
+}
+
+.video-description {
+
+    color: rgb(199, 19, 19);
+    margin: 0;
+    font-size: 24px;
+
+}
+
+.picture {
+    width: 200px;
+}
