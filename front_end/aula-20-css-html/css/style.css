@@ -2,6 +2,8 @@
 
 Esta página deve ser o mais próximo possível do design de referência! */
 
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:wght@900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +13,10 @@ Esta página deve ser o mais próximo possível do design de referência! */
     
 }
 
-body {
+/* body {
     height: 800vh;
     
-}
+} */
 
 header {
     max-width: 100%;
@@ -79,7 +81,7 @@ header .menu-background {
 }
 
 section.title {
-    background-image: url('/front_end/aula-20-css-html/img/skin-neve.webp');
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0)) , url('/front_end/aula-20-css-html/img/skin-neve.webp');
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;   
@@ -89,14 +91,22 @@ section.title {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column; 
+    font-family: 'Roboto', sans-serif; 
 }
 
-section.title h1, p {
+section.title h1 {
     font-weight: bold;
     text-align: center;
     line-height: 1.2em;
     margin-bottom: 12px;
+    font-size: 70px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+section.title p {
+    padding: 20px 0 50px 0;
 }
 
 section.title a {
@@ -194,10 +204,21 @@ section.title2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 50px;
+    font-size: 88px;
     color: #1B1B1C;
     padding: 50px 0;
     font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.new {
+    background-color: #0CDF70;
+    color: white;
+    /* float: left;
+    padding: 8px 12px;
+    display: block;
+    transform: translateY(-1px);
+    transform: translateX(55px); */
 }
 
 .produtos {
@@ -212,15 +233,71 @@ section.title2 {
 .produto img {
     background-color: #F5F3F3 ;
     width: 320px;
-    height: 451.99px;
+    /* height: 451.99px; */
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto div {
+    text-align: center;
+}
+
+.produto a {
+    color: #C4C4C4;
+}
+
+.thirty {
+    background-color: #000;
+    max-width: 1496px;
+    height: 600px;
+}
+
+.thirty h2 {
+    color: #0CDF70;
+    font-size: 80px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 900;
+}
+
+.thirty p {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 72px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.produto span {
-    background-color: #0CDF70;
-    color: white;
-    padding: 10px;
-    float: left;
-    top: -10px;
+.foo, .paragraph {    
+    text-align: center;
+    margin: 10px 0;
 }
