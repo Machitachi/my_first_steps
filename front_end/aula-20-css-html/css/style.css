@@ -1,0 +1,226 @@
+/* Escolha um design da referência básica e crie a programação web com HTML+CSS de uma loja virtual. 
+
+Esta página deve ser o mais próximo possível do design de referência! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body {
+    height: 800vh;
+    
+}
+
+header {
+    max-width: 100%;
+    height: 200px;
+    background-color: #0CDF70;
+}
+
+.menu-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1B1B1C;
+}
+
+.menu-principal > div {
+    margin-left: 20px;
+}
+
+.menu-navegar {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 20px;
+}
+
+.menu-navegar a {
+    color: white;
+}
+
+.menu-redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-redes img {
+    max-width: 20px;
+}
+
+.menu-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+    align-items: center;
+}
+
+.menu-login a {
+    color: white;
+}
+
+header .menu-background {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.menu-background h2 {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+section.title {
+    background-image: url('/front_end/aula-20-css-html/img/skin-neve.webp');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;   
+    max-width: 100%;
+    height: 536.2px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+section.title h1, p {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+section.title a {
+    border: solid 3px #0CDF70;
+    border-radius: 20px;
+    padding: 10px;
+    color: #0cdf70;    
+}
+
+section.title a:hover {
+    background-color: #0CDF70;
+    color: #1B1B1C;
+    font-weight: bold;
+}
+
+section.skin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section.skin .imagem {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    width: 425px;
+    height: 440px;
+    margin: 64px 0;    
+}
+
+.img-1 {
+    background-image: url('/front_end/aula-20-css-html/img/menina-skin.webp');
+}
+
+.img-2 {
+    background-image: url('/front_end/aula-20-css-html/img/men-2.webp');
+}
+
+.img-3 {
+    background-image: url('/front_end/aula-20-css-html/img/men-wowen-3.webp');
+}
+
+.imagem h2 {
+    text-align: center;
+    padding-top: 50%;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;   
+}
+
+section.title2 {
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)) ,  url('/front_end/aula-20-css-html/img/neve.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    max-width: 100%;
+    height: 536.2px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.title2 h2 {
+    color: #0cdf70;
+    font-size: 72px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.title2 p {
+    color: #CFCDCC;
+    font-size: 15px;
+    margin: 10px auto;
+    width: 50%;    
+}
+
+.title3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 1496px;
+    height: 400px;
+    background-color: #0CDF70;
+}
+
+.title3 img {
+    width: 200px;
+}
+
+.vendas h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    color: #1B1B1C;
+    padding: 50px 0;
+    font-weight: 900;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1496px;
+    height: 533.99px;    
+    justify-content: center;
+}
+
+.produto img {
+    background-color: #F5F3F3 ;
+    width: 320px;
+    height: 451.99px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto span {
+    background-color: #0CDF70;
+    color: white;
+    padding: 10px;
+    float: left;
+    top: -10px;
+}
