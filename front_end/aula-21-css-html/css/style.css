@@ -1,0 +1,214 @@
+/* Escolha um design da referência básica e crie a programação web com HTML+CSS de um site de animais de estimação. 
+
+Esta página deve ser o mais próximo possível do design de referência! */
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+/* body {
+    height: 800vh;
+    
+} */
+
+header {
+    max-width: 100%;
+    background-color: #000769;
+}
+
+.menu-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+    height: 127.800px;
+} 
+
+.menu-navegar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+ .menu-navegar a {
+    color: white;
+}
+
+.menu-redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-redes img {
+    max-width: 20px;
+}
+
+.menu-background h2 {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+video {
+    width: 1280px;
+    height: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;    
+}
+
+.conteudo {
+    position: absolute;
+    top: 400px;
+    left:400px;    
+}
+
+.conteudo h1 {
+    color: white;
+    font-family: oswald-medium,oswald,sans-serif;
+    line-height:1.25em;
+    text-align:center;
+    font-size:72px
+}
+
+.conteudo p {
+    color: white;
+    font-family: oswald-medium,oswald,sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+
+.conteudo a {
+    background-color: #FC9823;    
+    padding: 15px;
+    margin-left: 270px;    
+    
+}
+
+section.peixes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section.peixes .imagem {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    width: 457px;
+    height: 520px;
+    margin: 64px 0;    
+}
+
+.img-1 {
+    background-image: url('../img/1.webp');
+}
+
+.img-2 {
+    background-image: url('../img/2.webp');
+}
+
+.img-3 {
+    background-image: url('../img/3.webp');
+}
+
+.imagem h2 {
+    text-align: center;
+    padding-top: 40%;    
+    color: white;
+    font-size: 50px;
+    font-weight: 900;   
+}
+
+/* section.title-secund {    
+    max-width: 1280px;
+    height: 657px;    
+} */
+
+section .secund {
+    text-align: center;
+    width: 60%; 
+    margin: auto;
+} 
+
+.secund h2 {
+    color: #FC9823;
+    line-height: 1.5em;
+    font-size: 50px;
+    font-family: oswald-medium,oswald,sans-serif;
+    text-align: center; 
+    margin: 50px auto;   
+}
+
+.secund p {
+    color: #CFCDCC;
+    font-size: 15px;   
+    width: 80%;
+    color: #000769;
+    line-height: 1.88em;
+    text-align:center;
+    font-family: raleway,sans-serif;  
+    margin: 40px auto;     
+}
+
+.title-secund a {
+    background-color: #FC9823;    
+    padding: 15px;
+          
+}
+
+footer .rodape {
+    background-color: #000769;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 90px;
+    width: 100%;
+    height: 215.6px;
+    margin-top: 100px;       
+    color: white;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px ;
+}
+
+.paragraph a {
+    color: white;
+    padding: 10px;
+}
+
+.paragraph  {
+    display: flex;   
+    flex-direction: column; 
+    text-align: center;   
+}
+
+.paragraph p {
+    padding: 20px 0;
+}
+
+.paragraph1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
