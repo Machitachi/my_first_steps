@@ -32,6 +32,23 @@ header {
     height: 127.800px;
 } 
 
+.left {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-content: center;
+}
+
+.left h2 {
+    color: white;
+} 
+
+.left img {
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+}
+
 .menu-navegar {
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +57,10 @@ header {
 
  .menu-navegar a {
     color: white;
+}
+
+.menu-navegar a:hover {
+    color: #E58B29;
 }
 
 .menu-redes {
@@ -127,10 +148,10 @@ section.peixes .imagem {
 
 .imagem h2 {
     text-align: center;
-    padding-top: 40%;    
+    padding-top: 50%;    
     color: white;
-    font-size: 50px;
-    font-weight: 900;   
+    font-size: 28px;    
+    font-family: oswald-medium,oswald,sans-serif;       
 }
 
 /* section.title-secund {    
