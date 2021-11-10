@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 116px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu-principal > div {
+    margin-left: 200px;
+}
+
+.menu-1 h1 {
+    font-family: 'reklamescriptw00-medium' ,cursive;
+    font-size: 53px;
+    line-height: 1.4em;
+    color: #E00000;
+}
+
+.menu-1 a {
+    color: #E00000;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: 'helvetica-w01-light','helvetica-w02-light','sans-serif';
+}
+
+.menu-navegar {    
+    color: white;       
+    font-family: 'helvetica-w01-roman','helvetica-w02-roman,helvetica-lt-w10-roman','sans-serif';
+    line-height: 1.4em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;  
+}
+
+.menu-navegar a {
+    color: #970000;
+}
+
+.menu-3 a {
+    color: #970000;
+}
+
+.menu-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url('../img/mesa-de-comida.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 776px;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 176px;
+    line-height: 1.4em;
+    font-weight: bold;
+    font-family: 'reklamescriptw00-medium', 'cursive';
+    color: #F9FCCC;     
+}
+
+section p {
+    font-size:38px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-family: 'helvetica-w01-roman','helvetica-w02-roman','helvetica-lt-w10-roman','sans-serif';
+    color: #F9FCCC; 
+    letter-spacing:0.45em; 
+}
+
+section .link {
+    text-align: center;
+    margin: 10px;
+    height: 49px; 
+
+}
+
+section div a {     
+    border-radius: 20px;
+    border:solid 2px #F9FCCC; 
+    color: #F9FCCC;       
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: 'helvetica-w01-roman','helvetica-w02-roman','helvetica-lt-w10-roman','sans-serif';
+}
+
+section div a:hover {
+    background-color: #E00000;
+}
+
+section h2, p, a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+} 
+
+footer {
+    background-color: #E00000;
+    /* position: fixed;
+    bottom: 0; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #F3ECCC;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
