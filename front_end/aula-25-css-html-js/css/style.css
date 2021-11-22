@@ -20,7 +20,7 @@ main {
     height: 25vw;
     max-height: 500px;
     position: relative;
-    top: 150px;
+    top: 150px;    
 }
 
 #slider img {
@@ -32,6 +32,8 @@ main {
     transition: opacity 800ms;
     box-shadow:  2px 2px 4px #ccc;
     overflow: hidden;
+    border-radius: 5px;
+
 }
 
 #slider img.selected {

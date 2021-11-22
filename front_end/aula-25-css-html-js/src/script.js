@@ -55,35 +55,31 @@ description3.innerHTML =  "O Massacration se apresentou ao lado de outras bandas
 let description4 = document.querySelector("#paragraph4");
 description4.innerHTML =  "Seguiram-se novas aparições no programa Hermes e Renato com os clipes de 'Metal Bucetation' e 'Metal Milk-Shake' e uma apresentação no programa 'Cláudio Ricardo' (para promover o 'single' Metal Bucetation) além de entrevistas e participações em outros programas da MTV (como o Garagem do Edgar e a premiação anual VMB)."
 
-
-
-
-
-let img1 = document.getElementById("img1");
+let img1 = document.querySelector("#img1");
 img1.src = "img/metal1.jpg";
 
-let img2 = document.getElementById("img2");
+let img2 = document.querySelector("#img2");
 img2.src = "img/metal2.JPG";
 
-let img3 = document.getElementById("img3");
+let img3 = document.querySelector("#img3");
 img3.src = "img/metal3.jpg";
 
-let img4 = document.getElementById("img4");
+let img4 = document.querySelector("#img4");
 img4.src = "img/metal4.jpg";
 
-let img5 = document.getElementById("img5");
+let img5 = document.querySelector("#img5");
 img5.src = "img/metal5.jpg";
 
-let img6 = document.getElementById("img6");
+let img6 = document.querySelector("#img6");
 img6.src = "img/metal6.jpg";
 
-let img7 = document.getElementById("img7");
+let img7 = document.querySelector("#img7");
 img7.src = "img/metal7.jpg";
 
-let img8 = document.getElementById("img8");
+let img8 = document.querySelector("#img8");
 img8.src = "img/metal8.jpg";
 
-let img9 = document.getElementById("img9");
+let img9 = document.querySelector("#img9");
 img9.src = "img/metal9.jpg";
 
 
