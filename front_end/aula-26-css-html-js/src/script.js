@@ -65,7 +65,7 @@ let img1 = document.querySelector("#img1");
 img1.src = "img/peixe1.jpg";
 
 let img2 = document.querySelector("#img2");
-img2.src = "img/peixe2.JPG";
+img2.src = "img/peixe2.jpg";
 
 let img3 = document.querySelector("#img3");
 img3.src = "img/peixe3.jpg";
