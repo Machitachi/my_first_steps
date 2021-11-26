@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(93, 96, 99);
+  background-color: rgb(234 237,240);
+  background-image: url('http://www.astrope.com.br/wp-content/uploads/2013/12/Palestra-Tem%C3%A1tica.png');
+  background-attachment: fixed;
+  background-position: center;
+  font-family:Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.form-header , .speaker-form, .dados {
+  text-align: center;
+  background-color:rgb(246,247, 248);
+  border: 1px solid rgb(214 ,217,220);
+  border-radius: 3px;
+  width: 80%;
+  margin: 40px 0;
+  padding:  50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+}
+
+.form-row input[type="text"] {
+  background-color:  rgb(255, 255,255);
+  border:  1px solid rgb(214 217,220);
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+#label-abstract {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.line-content {
+  margin: 20px;
+  border:  0 none;
+}
+
+.legacy-form-row {
+  padding: 50px;
+}
+
+.input-form{
+  padding: 3px;
+  margin: 3px;
+}
+
+table, thead, tbody, th, tr, td{
+  border: solid 1px;
+}
+
+.dados {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  
+}

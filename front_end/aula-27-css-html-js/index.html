@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Palestras</title>
+</head>
+<body>
+  <header class="form-header ">
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário</em></p>
+  </header>
+  <main>
+    <form action="/" method="get" class="speaker-form">
+      <!-- Full name-->
+      <div class="form-row">
+        <div class="line-content">
+          <label for="full-name">Nome</label>
+          <input type="text"  name="full-name" id="full-name" placeholder="Coloque seu nome completo!" required />
+        </div>
+      </div>         
+
+      <!-- Fieldser - type of Talk-->
+      <div class="line-content">
+        <fieldset class="legacy-form-row">
+          <legend>Tipo de Palestra</legend>
+          <label for="talk-type">Palco Principal</label>
+          <input type="radio" name="talk-type" id="talk-type" value="palco" class="talk">
+  
+          <label for="talk-workshop">Workshop</label>
+          <input type="radio" name="talk-type" id="talk-workshop" value="workshop" class="talk">
+        </fieldset>
+      </div>     
+
+      <!-- Select t short size-->
+      <div class="line-content">
+        <label for="t-shirt-size">Tamanho da camisa</label>
+        <select name="t-shirt-size" id="t-shirt-size">
+          <option value="" selected></option>
+        <option value="P">Pequeno</option>
+        <option value="M">Médio</option>
+        <option value="G">Grande</option>
+      </select>
+      </div>      
+
+        <!-- Textarea - abstract  como fixar o tamanho de um textarea? -->
+        <div class="line-content">
+          <label for="abstract" id="label-abstract">Resumo da Palestra:</label>
+          <textarea name="abstract" id="abstract" cols="30" rows="10" placeholder="Explique o conteúdo da sua palestra"></textarea>
+        </div>        
+
+        <!-- Checkbox - available-->
+        <div class="line-content">
+          <input type="checkbox" name="available" id="available" value="true">
+         <label for="available">Confirmo que estou disponível na data do evento</label>
+        </div>
+
+        <div class="line-content">
+          <input type="button" id="btn-send" class="input-form" value="PALESTRANTE CONVIDADO" onclick="addPerson()"  />         
+        </div>          
+    </form>
+
+    <fieldset class="dados">
+      <h3 id="dados">Dados recebidos:</h3>
+      <table>
+        <thead>          
+          <th>Nome</th>          
+          <th>Resumo da Palestra</th>
+        </thead>
+        <tbody id="table-body">
+          
+        </tbody>
+      </table>     
+        
+    </fieldset>
+    
+  </main>  
+  <script src="src/script.js"></script>
+</body>
+</html>
