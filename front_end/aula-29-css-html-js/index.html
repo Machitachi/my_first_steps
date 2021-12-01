@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburgueria Xandão</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="src/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Hamburgueria Xandão</h1>
+    
+    <form method="post" action="/" id="form">
+      <div id="container">
+          <div id="pao">
+            <div>
+              <label for="frances">Francês</label>
+              <h4>...R$3,00...</h4>
+              <input type="radio" id="frances" name="tipo_pao" value="">
+            </div>      
+            <div>
+              <label for="astrauliano">Astrauliano</label>
+              <h4>...R$8,00...</h4>
+            <input type="radio" id="astrauliano" name="tipo_pao" value="">
+            </div>
+            <div>
+              <label for="brioche">Brioche</label>
+              <h4>...R$6,00...</h4>
+              <input type="radio" id="brioche" name="tipo_pao" value="">
+            </div>  
+          </div>
+
+          <div id="carne">
+            <div>
+              <label for="picanha">Picanha</label>
+              <h4>...R$13,00...</h4>
+              <input type="radio" id="picanha" name="burger" value="">
+            </div> 
+            <div>
+              <label for="costela">Costela</label>
+              <h4>...R$10,00...</h4>
+              <input type="radio" id="costela" name="burger" value="">
+            </div>
+            <div>
+              <label for="vegano">Vegano</label>
+              <h4>...R$12,00...</h4>
+              <input type="radio" id="vegano" name="burger" value="">
+            </div>   
+          </div>
+
+          <div id="verduras">               
+            <div>
+                <label for="alface">Alface</label>
+                <h4>...R$1,50...</h4>
+                <input type="checkbox" id="alface" value="">
+            </div>
+            <div>
+              <label for="tomate">Tomate</label>
+              <h4>...R$1,50...</h4>
+              <input type="checkbox" id="tomate" value="">
+            </div>  
+            <div>
+              <label for="sem_salada">Sem Salada</label>
+              <h4>...</h4>
+              <input type="checkbox" id="semSalada" value="">
+            </div>
+        </div>  
+          
+        <div id="queijos">
+            <div>
+              <label for="mussarela">Mussarela</label>
+              <h4>...R$3,00...</h4>
+              <input type="checkbox" id="mussarela" value="">
+            </div>
+            <div>
+              <label for="prato">Prato</label>
+              <h4>...R$3,00...</h4>
+              <input type="checkbox" id="prato" value="">
+            </div>
+            <div>
+              <label for="cheddar">Cheddar</label>
+              <h4>...R$5,00...</h4>
+              <input type="checkbox" id="cheddar" value="">
+            </div>
+          
+        </div>
+
+      </div>     
+          
+      <div id="btn">
+        <input type="button" value="Fazer Pedidos" id="btnPedidos"  onclick="calculoDoPedido()" />
+      </div>
+
+    </form>
+
+    <section>
+      <div id="pedido">
+        <!-- <h2 id="quadro">PEDIDOS</h2> -->
+          
+          <h3 id="total">Total: </h3>
+          <div class="produtos">
+            <h3>Pão: </h3>
+            <p id="tipoPao"></p>
+          </div>
+  
+          <div class="produtos">
+            <h3>Burguer: </h3>
+            <p id="burguer"></p>
+          </div>
+  
+          <div class="produtos">
+            <h3>Salada: </h3>
+            <p id="pedidosAlface"></p>
+            <p id="pedidosTomate"></p>
+          </div>
+  
+          <div class="produtos">
+            <h3>Queijo: </h3>
+            <p id="pedidosMussarela"></p>
+            <p id="pedidosPrato"></p>
+            <p id="pedidosCheddar"></p>
+          </div>        
+  
+      </div>
+
+    </section>   
+      
+  </main> 
+  
+</body>
+
+</html>

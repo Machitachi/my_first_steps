@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 25px;
+  max-width: 900px; 
+  margin-top: 15px;
+}
+
+#pao, #carne, #verduras, #queijos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  border: solid 1px wheat;
+  text-align: center;
+}
+
+#btn {
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#pedido {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+#tipoPao, #burguer, #pedidosAlface, #pedidosTomate,
+#pedidosMussarela, #pedidosPrato, #pedidosCheddar {
+  padding: 5px;
+  color: aqua;
+  font-size: 20px;
+}
