@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida Maluca</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Corrida Maluca</h1>
+
+        <div id="container">
+            <div id="carPedro" class="car">
+                <h2>Carro de Pedro</h2>
+                <p>Velocidade Mínima: <span>150km/h</span></p>
+                <p>Velocidade Máxima:<span> 230km/h</span></p>
+                <p>Derrapagem: <span>3%</span></p>
+            </div>
+    
+            <div id="carJuca" class="car">
+                <h2>Carro de Juca</h2>
+                <p>Velocidade Mínima: <span>120km/h</span></p>
+                <p>Velocidade Máxima:<span> 260km/h</span></p>
+                <p>Derrapagem: <span>5%</span></p>
+            </div>
+    
+            <div id="carEdna" class="car">
+                <h2>Carro de Edna</h2>
+                <p>Velocidade Mínima: <span>180km/h</span></p>
+                <p>Velocidade Máxima:<span> 220km/h</span></p>
+                <p>Derrapagem: <span>1%</span></p>
+            </div>   
+        </div>         
+              
+    </header>
+   
+    <main>       
+       
+        <h2>Escolha sua corrida</h2>  
+
+        <form>
+            <input type="button" id="min" value="Corrida Rápida - 10 Voltas" onclick="crazyRace()">
+
+            <input type="button" id="med" value="Grande Prêmio - 70 Voltas" onclick="bigPrize()">
+
+            <input type="button" id="max" value="Enduro - 160 Voltas" onclick="enduro()">
+        </form>
+
+        <div id="result">
+            <p id="content"></p>
+        </div>
+        
+    </main> 
+    
+</body>
+</html>
