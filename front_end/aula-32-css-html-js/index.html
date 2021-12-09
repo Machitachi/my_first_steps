@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+    <script src="src/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Números com array</h1>
+    </header>
+    <main>
+        <div id="numeros">
+            <label for="number1">Digite o primeiro número</label>
+            <input type="number" id="number1" name="number1" value="" required />
+
+            <label for="number2">Digite o segundo número</label>
+            <input type="number" id="number2" name="number2" value="" required />
+
+            <label for="number3">Digite o terceiro número</label>
+            <input type="number" id="number3" name="number3" value="" required />
+
+            <label for="number4">Digite o quarto número</label>
+            <input type="number" id="number4" name="number4" value="" required />
+
+            <input type="button" value="Armazenar" id="armazenar" onclick="armazenarNumeros()
+            " />
+
+            <input type="button" value="Inverter" id="inverter" onclick="inverterNumeros()" />
+
+            <input type="button" value="Ordem Crescente" id="ordemCrescente" onclick="ordenarNumeros()" />
+        </div>
+
+        <div id="resultado">
+            <div>
+                <h2 id="resultadoArmazenado"></h2>
+                <hr />
+            </div>
+    
+            <div>
+                <h2 id="p"></h2>
+                <hr />
+            </div>
+    
+            <div>
+                <h2 id="p1"></h2>
+                <hr />
+            </div> 
+        </div>             
+               
+    </main>
+</body>
+</html>
