@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #1a1a1a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.vector {
+    color: #1a1a1a;
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    margin-right: 20px;
+
+}
+
+.vector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.o::after {
+    content: '👩🏼‍🦳';
+    font-size: 80px;
+    line-height: 100px;
+}
+
+.x::after {
+    content: '👨🏻‍🦳';
+    font-size: 80px;
+    line-height: 100px;
+}
+
+#win {
+    font-size: 60px;
+}
+
+header p {
+    font-size: 50px; 
+    text-align: center;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #vector-11 {
+    background-color: bisque;
+    
+}
+
+#vector-12 {
+    background-color: bisque;
+}
+
+#vector-13 {
+    background-color: bisque;
+}
+
+#vector-21 {
+    background-color: bisque;
+}
+
+#vector-22 {
+    background-color: bisque;
+}
+
+#vector-23 {
+    background-color: bisque;
+}
+
+#vector-31 {
+    background-color: bisque;
+}
+
+#vector-32 {
+    background-color: bisque;
+}
+
+#vector-33 {
+    background-color: bisque;
+} */

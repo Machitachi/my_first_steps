@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/game.js" defer></script>
+    <script src="src/interface.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>JOGO DOS VELHOS</h1>
+        <div>
+            <p>Jogadora 👩🏼‍🦳 - 0</p>
+             <p>Jogador 👨🏻‍🦳 - x</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="0" class="vector">
+                <!-- <div class="o"></div> -->
+            </div>
+            <div id="1" class="vector">
+                <!-- <div class="x"></div> -->
+            </div>
+            <div id="2" class="vector"></div>
+        </section>
+
+        <section>
+            <div id="3" class="vector"></div>
+            <div id="4" class="vector"></div>
+            <div id="5" class="vector"></div>
+        </section>
+
+        <section>
+            <div id="6" class="vector"></div>
+            <div id="7" class="vector"></div>
+            <div id="8" class="vector"></div>
+        </section>
+
+        <section>
+            <div id="result">
+                <h2 id="win"></h2>  
+            </div>
+        </section>
+
+        <button id="btn-resetar" onclick="resetarJogo()">Resetar Jogo</button>
+    </main>
+    
+</body>
+</html>
