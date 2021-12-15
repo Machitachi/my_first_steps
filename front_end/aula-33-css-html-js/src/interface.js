@@ -19,7 +19,7 @@ function handleClick(event) {
             win.innerHTML = `A ganhadora foi: 👩🏼‍🦳 - Velhinha`;
         } else if (playerTime === 1) {
             win.innerHTML = `O ganhador foi: 👨🏻‍🦳 - Velhinho`;
-        } else if (playerTime !== 0 || playerTime !== 1) {
+        } else {
             win.innerHTML = `Vixe, ninguem ganhou 😳`;
         }
     }
@@ -36,9 +36,7 @@ function updateVector() {
 
         if (symbol !== '') {
             vector.innerHTML = `<div class="${symbol}"></div>`;
-
-
-        }
+        } 
     })
 }
 
@@ -48,12 +46,13 @@ function resetarJogo() {
 
     let square = document.getElementsByClassName('vector');
 
-    ;square.innerHTML = '';
-    
-    let board = ['', '', '', '', '', '', '', '', ''];
-    let playerTime = 0;
-    let symbols = ['o', 'x'];
-    let gameOver = false;
+    square.innerHTML = '';
+    console.log(square)
+
+    board = ['', '', '', '', '', '', '', '', ''];
+    playerTime = 0;
+    gameOver = false;
+
     updateVector();
     
     

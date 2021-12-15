@@ -56,37 +56,3 @@ function isWin() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const vector11 = document.getElementById('vector-11');
-const vector12 = document.getElementById('vector-12');
-const vector13 = document.getElementById('vector-13');
-const vector21 = document.getElementById('vector-21');
-const vector22 = document.getElementById('vector-22');
-const vector23 = document.getElementById('vector-23');
-const vector31 = document.getElementById('vector-31');
-const vector32 = document.getElementById('vector-32');
-const vector33 = document.getElementById('vector-33');
-
