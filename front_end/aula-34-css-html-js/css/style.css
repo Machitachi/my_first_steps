@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+    color:  #ccc;
+    margin: 5px;
+}
+
+p {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: 15px;
+    color: white;    
+}
+
+span {
+    color: yellow;
+    font-weight: 900;
+}
+
+#carPopular {
+    background-color: green;    
+}
+
+#carSport {
+    background-color: blue;    
+}
+
+#carSuperSport {
+    background-color: red;    
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    padding: 15px;  
+}
+
+form input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#content {
+    background-color: turquoise;
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#players {
+    background-color: palegreen;
+}
+
+#players h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}

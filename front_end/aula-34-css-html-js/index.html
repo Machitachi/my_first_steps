@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida Maluca - O retorno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Corrida Maluca - O retorno</h1>
+        <h2>Os amigos Pedro e Juca não se conformaram, pois o carrinho da Edna ganhava a maioria das corridas no joguinho que desenvolveram, então eles tiveram uma ideia para resolver este problema: gerar os carrinhos de forma aleatória.</h2>
+        <p>Cada carrinho gerado pode ser de uma das 3 raridades abaixo:</p>
+
+        <div id="container">
+            <div id="carPopular" class="car">
+                <h2>Popular - 60% de chances</h2>
+                <p>A - <span>Min.: 180 km/h | Máx.: 200 km/h</span></p>
+                <p>B - <span>Min.: 110 km/h | Máx.: 130 km/h</span></p>
+                <p>Derrapagem:</p>
+                <p><span>Min.: 3% | Máx.: 4%</span></p>
+            </div>
+    
+            <div id="carSport" class="car">
+                <h2>Sport - 35% de chances</h2>
+                <p>A - <span>Min.: 195 km/h | Máx.: 215 km/h</span></p>
+                <p>B - <span>Min.: 125 km/h | Máx.: 145 km/h</span></p>
+                <p>Derrapagem:</p>
+                <p><span>Min.: 2% | Máx.: 3%</span></p>
+            </div>
+
+            <div id="carSuperSport" class="car">
+                <h2>Super Sport - 5% de chances</h2>
+                <p>A - <span>Min.: 210 km/h | Máx.: 230 km/h</span></p>
+                <p>B - <span>Min.: 140 km/h | Máx.: 160 km/h</span></p>
+                <p>Derrapagem:</p>
+                <p><span>Min.: 1% | Máx.: 1.75%</span></p>
+            </div>    
+            
+        </div>      
+        
+    </header>
+
+    <main>
+        <form>
+            <label for="fastRun">Corrida rápida - 10 voltas</label>
+            <input type="radio" name="race" id="fastRun" value="10">
+    
+            <label for="bigPrize">Grande prêmio - 70 voltas</label>
+            <input type="radio" name="race" id="bigPrize" value="70">
+    
+            <label for="enduro">Enduro - 160 voltas</label>
+            <input type="radio" name="race" id="enduro" value="160">
+    
+            <button type="button" onclick=crazyRace()>Iniciar Corrida :)</button>
+        </form>
+    
+        <div id="players">
+            <p id="playerOne"></p>
+            <p id="playerTwo"></p>
+            <p id="playerThree"></p>
+            <h2 id="winner"></h2> 
+        </div>    
+
+    </main>    
+    
+</body>
+</html>
