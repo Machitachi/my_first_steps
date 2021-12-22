@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação</title>
+    <script src="src/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Os amigos Pedro, Juca e Edna continuam trabalhando em seu joguinho de corrida e dessa vez eles resolveram incluir uma função de evolução dos jogadores. </h1>
+        <p>Distribuição de pontos de experiência por corrida:</p>
+
+        <div id="container">
+            <div id="carPopular" class="car">
+                <h2>Corrida Rápida - (10 voltas) </h2>
+                <p>Primeiro Lugar: <span>200 pontos</span></p>
+                <p>Segundo Lugar: <span>120 pontos</span></p>
+                <p>Terceiro Lugar: <span>50 pontos</span></p>
+            </div>
+    
+            <div id="carSport" class="car">
+                <h2>Grand Prix - (70 voltas) </h2>
+                <p>Primeiro Lugar: <span>220 pontos</span></p>
+                <p>Segundo Lugar: <span>130 pontos</span></p>
+                <p>Terceiro Lugar: <span>75 pontos</span></p>
+            </div>
+
+            <div id="carSuperSport" class="car">
+                <h2>Corrida Rápida - (10 voltas) </h2>
+                <p>Primeiro Lugar: <span>250 pontos</span></p>
+                <p>Segundo Lugar: <span>150 pontos</span></p>
+                <p>Terceiro Lugar: <span>90 pontos</span></p>
+            </div>    
+            
+        </div>      
+        
+    </header>
+    <main>      
+       
+        <h2>ESCOLHA O TIPO DE CORRIDA</h2>  
+        <form>
+            <input type="button" id="fastRun" value="Corrida rápida - 10 voltas" onclick=" menosRodada()" />
+            <input type="button" id="bigPrize" value="Grande prêmio - 70 voltas" onclick="mediaRodada()" />
+            <input type="button" id="enduro" value="Enduro - 160 voltas" onclick="maximaRodada()" />
+        </form>
+        <section id="resultados">
+            <p id="content"></p>
+            <div id="players">
+                <h2>Número de Voltas</h2>
+                <p>Pedro: <span id="pedro">00</span></p>
+                <p>Juca: <span id="juca">00</span></p>
+                <p>Edna: <span id="edna">00</span></p>
+
+                <h2>Fases</h2>
+                <p>Pedro: <span id="nivelPedro">00</span></p>
+                <p>Juca: <span id="nivelJuca">00</span></p>
+                <p>Edna: <span id="nivelEdna">00</span></p>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
