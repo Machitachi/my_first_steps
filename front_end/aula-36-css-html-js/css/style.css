@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+h1 {
+text-align: center;
+}
+
+input, label {
+display: block;
+margin: 5px;
+}
+
+#btn {
+    padding: 2px;
+    margin: 5px;
+}
+
+.input-form{
+padding: 3px;
+margin: 3px;
+}
+
+table, thead, tbody, th, tr, td {
+border: solid 1px;
+padding: 2px;
+}
+
+table {
+    margin: 5px;
+}

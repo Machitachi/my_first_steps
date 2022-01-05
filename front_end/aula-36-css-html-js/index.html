@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja da Joana - map</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="src/script.js" defer></script>    
+</head>
+<body>
+  <header>
+    <h1>Loja da Joana</h1>
+  </header>
+  <main>
+      <form id="form">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" placeholder="Digite seu nome"/>
+        
+        <label for="data_vencimento">Data de Vencimento:</label>
+        <input type="date" id="data_vencimento" />
+
+        <label for="valor_compra">Valor da Compra R$:</label>
+        <input type="number" id="valor_compra" placeholder="Valor da compra"/>
+          
+        <div id="btn">
+          <input type="button" onclick="armazenarArray()" value="Armazenar"/>
+          <input type="button" onclick="juros()" value="Calcular"/>
+        </div>
+      </form>
+      <table id="table">
+        <thead>
+          <tr>
+              <th>Cliente</th>
+              <th>Vencimento</th>
+              <th>Valor da Compra</th>
+              <th>Total Com Juros</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>    
+  </main>
+    
+</body>
+</html>
