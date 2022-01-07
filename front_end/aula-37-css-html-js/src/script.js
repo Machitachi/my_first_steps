@@ -150,5 +150,6 @@ function organizarPorVencimento (){
         tableRows.appendChild(agrupar);
         let tabela = document.getElementById("table-body");
         tabela.appendChild(tableRows);
+        
     }
 }
