@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja da Joana - Filter</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="src/script.js" defer></script>    
+</head>
+<body>
+  <header>
+    <h1>Loja da Joana - Clientes em atraso</h1>
+  </header>
+  <main>
+    
+      <form id="form">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" placeholder="Digite seu nome"/>
+        
+        <label for="data_vencimento">Data de Vencimento:</label>
+        <input type="date" id="data_vencimento" />
+
+        <label for="valor_compra">Valor da Compra R$:</label>
+        <input type="number" id="valor_compra" placeholder="Valor da compra"/>
+          
+        <div id="btn">
+          <input type="button" onclick="armazenarArray()" value="Armazenar"/>
+          <input type="button" onclick="juros()" value="Calcular"/>
+          <input type="button" onclick="organizarPorCliente()" value="Clientes" />
+          <input type="button" onclick="organizarPorVencimento()" value="Atraso" />
+        </div>
+      </form>
+      <div id="filtro">
+        <label for="cliente">Data Inicial:</label>
+        <input type="date" id="data_inicial" />
+
+        <label for="cliente">Data Final:</label>
+        <input type="date" id="data_final" />
+
+        <label for="cliente">Valor Inicial:</label>
+        <input type="number" id="valor_inicial" placeholder="Mínimo" />
+
+        <label for="cliente">Valor Final:</label>
+        <input type="number" id="valor_final"placeholder="Máximo"/>
+      </div>
+      <div id="filtrar">
+        <input type="button" value="Filtrar" onclick="filtragemPorPeriodo()">
+      </div>
+      <table id="table">
+        <thead>
+          <tr>
+              <th>Cliente</th>
+              <th>Vencimento</th>
+              <th>Valor da Compra</th>
+              <th>Total Com Juros</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>  
+      
+  </main>
+    
+</body>
+</html>
