@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background: rgba(0, 0, 0, .6) url('https://media-manager.noticiasaominuto.com/1920/naom_5e4be6cbceff8.jpg');
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 2px;
+}
+
+#increase, #decrease {
+   padding: 15px;
+   border-radius: 3px;
+   background-color: bisque;
+   color: black;
+   font-size: 20px;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+section div {
+    width: 60%;
+}
+
+#btn {
+    text-align: center;
+}
