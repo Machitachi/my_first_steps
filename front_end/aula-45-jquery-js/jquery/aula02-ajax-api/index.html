@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotação - Jquery</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <main>
+    <div id="tabela">
+      <h1><img src="https://img.icons8.com/doodle/48/000000/coins--v1.png"/>Cotações<img src="https://img.icons8.com/doodle/48/000000/coins--v1.png"/></h1>
+      <div id="dados">
+        <label for="moedas">Escolha a moeda:</label>
+        <select id="moedas"></select>
+        
+        <label for="data-inicial">Data Inicial:</label>
+        <input id="data-inicial" type="date" />
+
+        <label for="data-final">Data Final:</label>
+        <input id="data-final" type="date" />
+
+        <input type="button" id="btn" value="Pesquisar">  
+              
+        <table>
+          <tr>
+            <th>Moeda</th>
+            <th>Compra</th>
+            <th>Venda</th>
+            <th>Variação</th>
+            <th>Porcentagem de Variação</th>
+            <th>Máximo</th>
+            <th>Mínimo</th>
+            <th>Data e Hora</th>              
+          </tr>
+          <tr>
+            <tbody id="result"></tbody>
+          </tr>
+        </table>
+        
+      </div>
+    </div>   
+
+  </main>  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/script.js"></script>
+  
+</body>
+</html>

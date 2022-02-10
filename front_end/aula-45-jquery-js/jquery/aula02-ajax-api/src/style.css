@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://www.infomoney.com.br/wp-content/uploads/2019/06/acoes-alta.jpg?fit=900%2C825&quality=50&strip=all);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;  
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#tabela {
+  background-color: aliceblue;
+  text-align: center;
+  margin: 10px 0;
+  padding: 15px;  
+}
+
+#dados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;  
+}
+
+input, select, label {
+  width: 200px;
+  margin: 0 auto;
+  padding: 3px;    
+}
+
+#btn {
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+tr, td, th {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+
